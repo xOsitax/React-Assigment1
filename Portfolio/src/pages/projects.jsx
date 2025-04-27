@@ -26,17 +26,17 @@ function Projects() {
           learnings="Gained experience in React and styled components with Tailwind."
           role="Full Stack Developer"
           challenges="Creating an interactive, dynamic portfolio."
-          github="https://github.com/xOsitax/portfolio-website"
+          github="https://github.com/xOsitax/BarWebsite"
         />
         <ProjectCard
           image={Pallet}
-          name="Group Website"
+          name="Grid Color Pallet"
           description="A portfolio website showcasing my projects and skills."
           tech="html,CSS"
           learnings="Gained experience in React and styled components with Tailwind."
           role="Full Stack Developer"
           challenges="Creating an interactive, dynamic portfolio."
-          github="https://github.com/xOsitax/portfolio-website"
+          github="https://github.com/xOsitax/Grid"
         />
       </div>
 
