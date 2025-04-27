@@ -35,10 +35,10 @@ function App() {
       </div>
 
       <div id="projects">
-        <Projects /> {/* This will render Projects.jsx here */}
+        <Projects /> {}
       </div>
 
-      <div id="contact">{/* Your Contact Section */}</div>
+      <div id="contact">{}</div>
     </>
   );
 }

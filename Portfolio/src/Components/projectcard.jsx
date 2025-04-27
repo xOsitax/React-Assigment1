@@ -1,4 +1,3 @@
-// ProjectCard.jsx
 function ProjectCard({
   image,
   name,
@@ -36,7 +35,7 @@ function ProjectCard({
         <strong>Challenges:</strong> {challenges}
       </p>
 
-      {/* Use a direct link (href) to external or internal pages */}
+      {}
       <a
         href={github}
         target="_blank"
@@ -46,9 +45,9 @@ function ProjectCard({
         View on GitHub
       </a>
 
-      {/* Example of a direct project link (not using React Router) */}
+      {}
       <a
-        href={`#${name.replace(/\s+/g, "-").toLowerCase()}`} // Convert name to a URL-friendly format
+        href={`#${name.replace(/\s+/g, "-").toLowerCase()}`}
         className="text-blue-500 hover:text-blue-700 mt-4 block"
       >
         View Project Details
