@@ -1,3 +1,4 @@
+// ProjectCard.jsx
 function ProjectCard({
   image,
   name,
@@ -46,12 +47,6 @@ function ProjectCard({
       </a>
 
       {}
-      <a
-        href={`#${name.replace(/\s+/g, "-").toLowerCase()}`}
-        className="text-blue-500 hover:text-blue-700 mt-4 block"
-      >
-        View Project Details
-      </a>
     </div>
   );
 }
