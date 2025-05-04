@@ -5,24 +5,42 @@ function ProjectPopup({ project, onClose }) {
 
   return (
     <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
-      <div className="bg-white rounded-lg p-6 max-w-lg w-full relative shadow-lg">
+      <div className="bg-white rounded-2xl p-8 max-w-md w-full relative shadow-2xl">
         <button
           onClick={onClose}
-          className="absolute top-3 right-3 text-gray-500 hover:text-black"
+          className="absolute top-4 right-4 text-gray-500 hover:text-red-600 text-2xl font-bold"
         >
           &times;
         </button>
-        <p className="text-gray-700 mb-4">
-          <strong>Tech Used:</strong> {project.tech}
+
+        <h2 className="text-2xl font-bold text-gray-800 mb-4 text-center">
+          {project.name}
+        </h2>
+
+        <p className="text-gray-700 mb-3">
+          <span className="font-semibold">Tech Used:</span> {project.tech}
         </p>
-        <p className="text-gray-700 mb-4">
-          <strong>Role:</strong> {project.role}
+
+        <p className="text-gray-700 mb-3">
+          <span className="font-semibold">Role:</span> {project.role}
         </p>
-        <p className="text-gray-700 mb-4">
-          <strong>Challenges:</strong> {project.challenges}
+
+        <p className="text-gray-700">
+          <span className="font-semibold">Challenges:</span>{" "}
+          {project.challenges}
         </p>
+
+        <a
+          href={project.github}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-6 inline-block text-blue-600 hover:underline font-medium"
+        >
+          View on GitHub →
+        </a>
       </div>
     </div>
   );
 }
+
 export default ProjectPopup;
