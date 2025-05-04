@@ -1,15 +1,9 @@
-function ProjectCard({
-  image,
-  name,
-  description,
-  tech,
-  learnings,
-  role,
-  challenges,
-  github,
-}) {
+function ProjectCard({ image, name, description, github, learnings, onClick }) {
   return (
-    <div className="project-card bg-white shadow-lg rounded-lg p-4">
+    <div
+      className="project-card bg-white shadow-lg rounded-lg p-4 cursor-pointer"
+      onClick={onClick}
+    >
       <div className="w-full h-48 flex justify-center items-center overflow-hidden rounded-t-lg">
         <img
           src={image}
@@ -25,17 +19,9 @@ function ProjectCard({
       <p className="project-description text-gray-600 mt-2">
         <strong>Description:</strong> {description}
       </p>
-      <p className="project-tech text-gray-600 mt-2">
-        <strong>Tech Used:</strong> {tech}
-      </p>
+
       <p className="project-learnings text-gray-600 mt-2">
         <strong>What I Learned:</strong> {learnings}
-      </p>
-      <p className="project-role text-gray-600 mt-2">
-        <strong>Role:</strong> {role}
-      </p>
-      <p className="project-challenges text-gray-600 mt-2">
-        <strong>Challenges:</strong> {challenges}
       </p>
 
       <a
