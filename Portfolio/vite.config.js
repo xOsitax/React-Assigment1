@@ -6,6 +6,6 @@ import tailwindcss from "@tailwindcss/vite";
 const repoName = "your-repo-name";
 
 export default defineConfig({
-  base: `/${repoName}/`,
+  base: "/React-Assigment1/",
   plugins: [react(), tailwindcss()],
 });
